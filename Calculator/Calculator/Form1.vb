@@ -20,7 +20,17 @@
             result = firstNum + secondNum
             'output the result
             txtResults.Text = "The result of " & firstNum & " + " & secondNum & " = " & result & "."
+        Else
+            'an Else statement to show a message-box so user enters both numbers
+            MessageBox.Show("Please enter both numbers.")
         End If
+
+        'changes the color of the button to let the user know they clicked that particular button
+        btnPlus.BackColor = Color.CornflowerBlue
+        'forces the other buttons to retain their current backColor, visually confirming from the user
+        btnMinus.BackColor = Color.FromArgb(224, 224, 224)
+        'Color has a property FromArgb() that lets us specify rgb values for color
+        btnMultiply.BackColor = Color.FromArgb(224, 224, 224)
 
     End Sub
 
@@ -32,7 +42,13 @@
 
             result = firstNum - secondNum
             txtResults.Text = "The result of " & firstNum & " - " & secondNum & " = " & result & "."
+        Else
+            MessageBox.Show("Please enter both numbers.")
         End If
+
+        btnPlus.BackColor = Color.FromArgb(224, 224, 224)
+        btnMinus.BackColor = Color.CornflowerBlue
+        btnMultiply.BackColor = Color.FromArgb(224, 224, 224)
     End Sub
 
     Private Sub btnMultiply_Click(sender As Object, e As EventArgs) Handles btnMultiply.Click
@@ -43,6 +59,12 @@
 
             result = firstNum * secondNum
             txtResults.Text = "The result of " & firstNum & " x " & secondNum & " = " & result & "."
+        Else
+            MessageBox.Show("Please enter both numbers.")
         End If
+
+        btnPlus.BackColor = Color.FromArgb(224, 224, 224)
+        btnMinus.BackColor = Color.FromArgb(224, 224, 224)
+        btnMultiply.BackColor = Color.CornflowerBlue
     End Sub
 End Class

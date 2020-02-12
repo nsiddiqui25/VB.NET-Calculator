@@ -56,30 +56,33 @@ Partial Class frmCalculator
         '
         'btnPlus
         '
+        Me.btnPlus.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnPlus.Location = New System.Drawing.Point(313, 22)
         Me.btnPlus.Name = "btnPlus"
         Me.btnPlus.Size = New System.Drawing.Size(75, 75)
         Me.btnPlus.TabIndex = 3
         Me.btnPlus.Text = "+"
-        Me.btnPlus.UseVisualStyleBackColor = True
+        Me.btnPlus.UseVisualStyleBackColor = False
         '
         'btnMinus
         '
+        Me.btnMinus.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnMinus.Location = New System.Drawing.Point(313, 103)
         Me.btnMinus.Name = "btnMinus"
         Me.btnMinus.Size = New System.Drawing.Size(75, 75)
         Me.btnMinus.TabIndex = 4
         Me.btnMinus.Text = "-"
-        Me.btnMinus.UseVisualStyleBackColor = True
+        Me.btnMinus.UseVisualStyleBackColor = False
         '
         'btnMultiply
         '
+        Me.btnMultiply.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnMultiply.Location = New System.Drawing.Point(313, 184)
         Me.btnMultiply.Name = "btnMultiply"
         Me.btnMultiply.Size = New System.Drawing.Size(75, 75)
         Me.btnMultiply.TabIndex = 5
         Me.btnMultiply.Text = "x"
-        Me.btnMultiply.UseVisualStyleBackColor = True
+        Me.btnMultiply.UseVisualStyleBackColor = False
         '
         'lblFirst
         '
