@@ -34,6 +34,16 @@
 
     End Sub
 
+    Private Sub txtFirst_TextChanged(sender As Object, e As EventArgs) Handles txtFirst.TextChanged
+        'this TextChanged event clears the output result text box when one of the numbers in an input box are changed
+        'double-clicking on the input when generate this TextChanged event
+        txtResults.Clear()
+    End Sub
+
+    Private Sub txtSecond_TextChanged(sender As Object, e As EventArgs) Handles txtSecond.TextChanged
+        txtResults.Clear()
+    End Sub
+
     Private Sub btnMinus_Click(sender As Object, e As EventArgs) Handles btnMinus.Click
         'Dim firstNum, secondNum, result As Double
         If txtFirst.Text <> "" And txtSecond.Text <> "" Then
